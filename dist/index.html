@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We offer personalized treatments, including teeth cleaning, whitening, braces, and more, ensuring your healthiest and brightest smile.Book your teeth care appointment today!" />
+    <style>
+    @keyframes fade-in {from {opacity: 0;} to { opacity: 1;}} .fade-in {
+    animation-duration: 0.9s;
+    animation-timing-function: ease-in-out;
+    opacity:0;
+  }
+  .fade-in._active{
+    animation-name: fade-in;
+    opacity: 1;
+  }   
+    </style>
+    <link rel="stylesheet" href="css/fontawesome.min.css?_v=20241121213533"> 
+    <link rel="stylesheet" href="css/solid.min.css?_v=20241121213533"> 
+    <link rel="stylesheet" href="css/brands.min.css?_v=20241121213533"> 
+    <link rel="preload" href="img/mainimg.webp">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="stylesheet" href="css/style.min.css?_v=20241121213533">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js?_v=20240328231806"></script>
+    <title>Головна</title>
+</head>
+    <body>
+<div class="w-full h-full">
+        <header class="w-full h-[79px] bg-[rgba(38,116,10,0.54)]">
+    <div class="max-w-6xl mx-auto flex items-center  md:justify-between px-4 md:pt-[10px]">
+        <div class="md:basis-1/12 flex justify-start pt-3 logo">
+            <img src="../img/Logo tooth 1.png" alt="Logo" class="h-10">
+        </div>
+        <div class="md:hidden absolute right-4 top-5"><ion-icon name="menu" class="text-3xl cursor-pointer md:hidden" id="menu-icon" ></ion-icon></div>
+        <div class="flex max-820:ml-[10px]  max-1023:ml-[50px] lg:ml-[150px] items-center">
+            <nav id="nav-menu" class="hidden md:block md:bg-none absolute md:relative top-20 md:top-0 right-0 w-[322px] md:w-full bg-radial-gradient rounded-bl-[65px]">
+                <ul class="flex flex-col  md:flex-row items-center md:items-center w-full md:w-auto md:space-x-6">
+                    <li class="pl-0 pt-4 md:pt-0 md:pl-[80px] font-bold hover:text-white"><a href="#">Home</a></li>
+                    <li class="pl-0 pt-4 md:pt-0 md:pl-[45px]  font-['Inter'] hover:text-white"><a href="#">About us</a></li>
+                    <li class="pl-0 pt-4 md:pt-0 md:pl-[45px] hover:text-white"><a href="#">Doctors</a></li>
+                    <li class="pl-0 pt-4 md:pt-0 md:pl-[45px] hover:text-white"><a href="#">Service</a></li>
+                    <li class="pl-0 pt-4 md:pt-0 py-4 md:hidden">
+                        <button class="uppercase  py-2 px-6 rounded js-button-open">Make an appointment</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="basis-1/5 flex items-center max-767:hidden">
+            <button class="max-1023:text-sm uppercase js-button-open" data-popup-target="popup1" >Make an appointment</button>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+
+        <div class="popup hidden opacity-90 md:opacity-100 md:fixed mt-[-75px]  w-full  pt-[56px] pb-[40px] bg-[#68AB51] px-2.5 py-2.5 bg-[url('/img/elipses.png')] bg-cover bg-center md:bg-blend-multiply"  data-popup-id="popup1">
+    <div class="absolute mt-[-30px] ml-[60px]"><button class="js-button-close"><i class="fa-solid fa-arrow-left text-2xl text-white"></i></button></div>
+    <div class="flex flex-wrap justify-center md:flex-nowrap">
+    <div class="basis-2/4  text-white ">
+        <div class="text-center max-425:py-[30px] md:py-0">
+            <h6 class="text-xl lg:text-3xl pb-[10px]">When we work</h6>
+            <p class="text-base lg:text-xl">Monday 9.00-18.00</p>
+            <p class="text-base lg:text-xl" >Tuesday 9.00-18.00</p>
+            <p class="text-base lg:text-xl">Wednesday 9.00-20.00</p>
+            <p class="text-base lg:text-xl">Thursday 9.00-18.00 </p>
+            <p class="text-base lg:text-xl" >Friday 10.00-18.00</p>
+            <p class="text-base lg:text-xl">Saturday 10.00-16.00</p>
+            <p class="text-base lg:text-xl">Sunday 11.00-15.00</p>
+        </div>
+        <div class="lg:flex lg:justify-center pt-[50px]"><picture><source srcset="img/map.webp" type="image/webp"><img loading="lazy" class="w-full max-w-[590px] min-w-[300px] lazyload" src="img/map.png" alt="map"></picture></div>
+    </div>
+    <div class="basis-2/4 flex flex-col items-center justify-center pt-[50px] md:pt-0">
+        <h3 class="px-2.5 py-2.5 md:text-2xl text-white rounded-xl bg-[#26740A] mb-[40px] shadow-custom">Make an appointment</h3>
+        <form class="flex flex-col justify-center space-y-3 w-[250px] md:w-[400px] text-neutral-500">
+            <input class="border-2 border-white rounded-xl px-2.5 py-1.5 placeholder:text-neutral-500 " type="text" placeholder="Your name">
+            <input class="border-2 border-white rounded-xl px-2.5 py-1.5 placeholder:text-neutral-500" type="text" placeholder="Full name">
+            <input class="border-2 border-white rounded-xl px-2.5 py-1.5 placeholder:text-neutral-500" type="text" placeholder="Your age">
+            <select class="border-2 border-white rounded-xl px-2.5 py-1.5 placeholder:text-neutral-500">
+                <option value="" disabled selected>Which doctor</option>
+                <option value="therapist">Orthodontist</option>
+                <option value="dentist">Dentist</option>
+                <option value="cardiologist">Implantologist</option>
+            
+            </select>
+            <select class="border-2 border-white rounded-xl px-3.5 py-2.5">
+                <option value="" disabled selected>Choose hour</option>
+                <option value="9:00">9:00</option>
+                <option value="dentist">11:00</option>
+                <option value="cardiologist">14:00</option>
+            
+            </select>
+            <input class="border-2 border-white rounded-xl px-3.5 py-2.5 placeholder:text-neutral-500" type="number" placeholder="Your number">
+            <input class="border-2 border-white rounded-xl px-3.5 py-2.5 placeholder:text-neutral-500" type="email" placeholder="Your email">
+          </form>
+          <div class="flex max-425:flex-col flex-row text-green-950">
+          <div class="flex max-425:justify-center w-full md:w-auto pr-[20px] pt-[20px]">
+            <div class="self-center"><i class="fa-solid fa-mobile-screen-button md:text-[25px]"></i></div>
+            <div class="self-center pl-1 lg:pl-4"><span class="font-['Inter'] md:text-lg">+1917391824912</span></div>
+        </div>
+        <div class="flex w-full md:w-auto pt-[20px] text-green-950">
+            <div class="self-center"><i class="fa-regular fa-envelope md:text-[25px]"></i></div>
+           <div class="flex-col self-center pl-1 lg:pl-4"><span class="font-['Inter'] md:text-lg">efjoiejgfspd@gmail.com</span></div> 
+        </div>
+    </div>
+        <div class="flex justify-center w-full md:w-auto pt-[10px] text-green-950">
+            <a class=""><i class="fab fa-instagram md:text-[30px]  p-2.5"></i></a>
+            <a><i class="fab fa-facebook md:text-[30px] p-2.5"></i></a>
+            <a><i class="fa-brands fa-twitter md:text-[30px] p-2.5"></i></a>
+        </div>
+    </div>
+    </div>
+</div>
+        <main class="max-w-screen-2xl mx-auto flex sm:flex-row flex-col-reverse">
+        <div class="basis-3/6 flex justify-center pt-4 md:mt-[71px] lg:mt-[157px] fade-in _animation-items"><picture><source srcset="img/mainimg.webp" type="image/webp"><img fetchpriority="high" class="w-[167px] h-[279px] md:w-[232px] md:h-[341px] lg:w-[512px] lg:h-[768px]" src="img/mainimg.png" alt="mainpic"></picture></div>
+        <div class="basis-3/6 pl-[53px] pr-[53px] pt-[28px] md:pt-[71px] md:pl-[71px] md:pr-[69px] lg:pt-[170px] text-center ">
+            <h1 class="fade-in _animation-items text-2xl md:text-5xl lg:text-8xl font-['Jockey_One']">HELPING <span class="text-[#26740A]">YOU</span> TO BRING
+                 <span class="text-[#26740A]">BACK</span> YOUR HAPPI <span class="text-[#26740A]">SMILE</span></h1>
+            <p class="fade-in _animation-items font-['Jockey_One'] pt-4 lg:pt-[69px] lg:pl-[69px] text-xs lg:text-xl">Lorem Ipsum is simply dummy text of the printing 
+                and typesetting industry.</p>
+        </div>
+        </main>
+        <div class="mt-[136px]">
+    <div class="max-767:min-h-[430px] max-1023:min-h-[730px] min-h-[1120px] flex flex-wrap items-center bg-[url('../img/backgroundmobile.png')] bg-[length:100%_100%] bg-center bg-no-repeat md:bg-[url('../img/backgroundabout.png')]">
+        <div class="flex flex-wrap w-full">
+            <div class="basis-full md:basis-1/2 pl-[18px] pr-[18px] md:pl-[35px] md:pr-[40px] md:pt-[58px] xl:pl-[90px] xl:pr-[116px] fade-in _animation-items">
+                <div class=" relative flex items-center justify-center pt-[35px] ">
+                    <h2 class="pt-[25px] pb-5 lg:pb-[25px] max-425:pb-0 lg:pt-[100px] lg:pl-[65px] max-1023:text-center 2xl:text-center text-xl sm:text-3xl md:text-5xl lg:text-[64px]  font-['Itim'] bg-[url('../img/Rectangle.png')] bg-no-repeat lg:bg-right max-1023:bg-center xl:bg-center bg-contain w-full">
+                        About us
+                    </h2>
+                </div>
+                <p class="font-['Jockey_One'] py-[30px] max-425:text-center max-425:text-xs lg:text-2xl lg:text-justify xl:text-3xl leading-normal text-white">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </p>
+            </div>
+            <div class="basis-full md:basis-1/2 flex justify-center sm:w-[373px] sm:h-[363px] md:w-[263px] md:h-[524px] xl:w-[485px] xl:h-[812px] fade-in _animation-items">
+                <picture><source srcset="img/aboutmobile.webp" type="image/webp"><img loading="lazy" class="w-auto h-auto md:hidden pt-[15px] max-w-[90%] max-h-[90%] object-contain lazyload" src="img/aboutmobile.png" alt="About Mobile Image"></picture>
+                <picture><source srcset="img/aboutimg.webp" type="image/webp"><img loading="lazy" class="hidden md:block max-w-full max-h-full object-contain transition-all duration-300 ease-in-out lazyload" src="img/aboutimg.png" alt="About Image"></picture>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-[-25px] md:mt-[-60px]">
+    <button class="font-['Itim'] text-base md:text-3xl lg:text-5xl  text-white bg-[#26740A] px-[11px] py-[12px]  md:pt-[20px] md:pb-[20px] md:pl-[16px] md:pr-[16px] lg:pt-[34px] lg:pb-[34px] lg:pl-[59px] lg:pr-[59px]">Our adventages</button>
+</div>
+
+<div class="flex flex-wrap md:pr-[107px] md:pl-[107px] mt-[102px] xl:ml-[113px] ">
+    <div class="animate-fade-in flex flex-col  basis-full md:basis-1/3 items-center  pt-[23px] lg:pr-[113px] fade-in _animation-items">
+        <picture><source srcset="img/calendar.webp" type="image/webp"><img loading="lazy" class ="w-[38px] h-[41px] lg:w-[71px] lg:h-[80px] lazyload" src="img/calendar.png" alt="calender"></picture>
+        <p class="pt-[11px] md:pt-[33px] text-center text-xs lg:text-xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    </div>
+    <div class="animate-fade-in flex flex-col  basis-full md:basis-1/3 items-center pt-[23px] lg:pr-[113px] fade-in _animation-items">
+        <picture><source srcset="img/tooth.webp" type="image/webp"><img loading="lazy" class="w-[38px] h-[41px] lg:w-[71px] lg:h-[80px] lazyload" src="img/tooth.png" alt="tooth"></picture>
+       <p class="pt-[11px] md:pt-[33px] text-center text-xs lg:text-xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        
+    </div>
+    <div class="animate-fade-in flex flex-col basis-full md:basis-1/3 items-center pt-[23px] lg:pr-[113px] fade-in _animation-items">
+      <picture><source srcset="img/phone.webp" type="image/webp"><img loading="lazy" class="w-[38px] h-[41px] lg:w-[71px] lg:h-[80px] lazyload" src="img/phone.png" alt="mobile"></picture>
+        <p class="pt-[11px] md:pt-[33px] text-center text-xs lg:text-xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+    </div>
+</div>
+
+        <div class="mt-[73px] mb-[154px] bg-[url('../img/backgrounddoctors.png')] bg-[length:100%_100%] bg-center bg-no-repeat">
+    <h2 class="font-['Inter'] pt-[71px] pb-[50px] xl:pb-[144px] text-3xl text-center">Doctors</h2>
+    <section class="card-wrapper">
+        <article class="card-container active">
+            <div class="bla fade-in _animation-items"><picture><source srcset="img/amanda2.webp" type="image/webp"><img loading="lazy" class="card-image lazyload" src="img/amanda2.jpg" alt="doctor1"></picture></div>
+            <div class="overlay">
+                <div class="z-10 relative bottom-0"><picture><source srcset="img/Rectangle8.webp" type="image/webp"><img loading="lazy" class="rectangle lazyload" src="img/Rectangle8.png" alt="rectangle"></picture></div>
+                <div class="z-20 absolute">
+                    <h3 class="overlay-headline">Amanda</h3>
+                    <p class="overlay-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="flex justify-center lg:justify-end"><picture><source srcset="img/star.webp" type="image/webp"><img class="overlay-stars" src="img/star.png" alt="stars"></picture></div>
+                </div>
+            </div>
+        </article>
+        <article class="card-container">
+            <div class="bla fade-in _animation-items"><picture><source srcset="img/Thomas.webp" type="image/webp"><img loading="lazy" class="card-image lazyload" src="img/Thomas.jpg" alt="doctor2"></picture></div>
+            <div class="overlay">
+                <div class="z-10 relative bottom-0"><picture><source srcset="img/Rectangle8.webp" type="image/webp"><img loading="lazy" class="rectangle lazyload" src="img/Rectangle8.png"  alt="rectangle"></picture></div>
+                <div class="z-20 absolute">
+                    <h3 class="overlay-headline">Thomas</h3>
+                    <p class="overlay-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-center lg:justify-end"><picture><source srcset="img/threestar.webp" type="image/webp"><img class="overlay-stars" src="img/threestar.png" alt="stars"></picture></div>
+                </div>
+            </div>
+        </article>
+        <article class="card-container">
+            <div class="bla fade-in _animation-items"><picture><source srcset="img/Rick.webp" type="image/webp"><img loading="lazy" class="card-image lazyload" src="img/Rick.jpg" alt="doctor3"></picture></div>
+            <div class="overlay">
+                <div class="z-10 relative bottom-0"><picture><source srcset="img/Rectanglemidle.webp" type="image/webp"><img loading="lazy" class="rectangle lazyload" src="img/Rectanglemidle.png" alt="rectangle" ></picture></div>
+                <div class="z-20 absolute">
+                    <h3 class="overlay-headline">Rick</h3>
+                    <p class="overlay-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-center lg:justify-end"><picture><source srcset="img/threestar.webp" type="image/webp"><img class="overlay-stars" src="img/threestar.png" alt="stars"></picture></div>
+                </div>
+            </div>
+        </article>
+        <article class="card-container">
+            <div class="bla fade-in _animation-items"><picture><source srcset="img/Anna.webp" type="image/webp"><img loading="lazy" class="card-image lazyload" src="img/Anna.jpg" alt="doctor4"></picture></div>
+            <div class="overlay">
+                <div class="z-10 relative bottom-0"><picture><source srcset="img/Rectanglemidle.webp" type="image/webp"><img loading="lazy" class="rectangle lazyload" src="img/Rectanglemidle.png" alt="rectangle"></picture></div>
+                <div class="z-20 absolute">
+                    <h3 class="overlay-headline">Anna</h3>
+                    <p class="overlay-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-center lg:justify-end"><picture><source srcset="img/threestar.webp" type="image/webp"><img class="overlay-stars" src="img/threestar.png" alt="stars"></picture></div>
+                </div>
+            </div>
+        </article>
+        <article class="card-container">
+            <div class="bla fade-in _animation-items"><picture><source srcset="img/Nessa.webp" type="image/webp"><img loading="lazy" class="card-image lazyload" src="img/Nessa.jpg" alt="doctor5"></picture></div>
+            <div class="overlay">
+                <div class="z-10 relative bottom-0"><picture><source srcset="img/Rectanglend.webp" type="image/webp"><img loading="lazy" class="rectangle lazyload" src="img/Rectanglend.png" alt="rectangle"></picture></div>
+                <div class="z-20 absolute">
+                    <h3 class="overlay-headline">Nessa</h3>
+                    <p class="overlay-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-center lg:justify-end"><picture><source srcset="img/star.webp" type="image/webp"><img class="overlay-stars" src="img/star.png" alt="stars"></picture></div>
+                </div>
+            </div>
+        </article>
+        <article class="card-container">
+            <div class="bla fade-in _animation-items"><picture><source srcset="img/deamon.webp" type="image/webp"><img loading="lazy" class="card-image lazyload" src="img/deamon.jpg" alt="doctor6"></picture></div>
+            <div class="overlay">
+                <div class="z-10 relative bottom-0"><picture><source srcset="img/Rectanglend.webp" type="image/webp"><img loading="lazy" class="rectangle lazyload" src="img/Rectanglend.png" alt="rectangle"></picture></div>
+                <div class="z-20 absolute">
+                    <h3 class="overlay-headline">Deamon</h3>
+                    <p class="overlay-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-center lg:justify-end"><picture><source srcset="img/star.webp" type="image/webp"><img class="overlay-stars" src="img/star.png" alt="stars"></picture></div>
+                    </div>
+            </div>
+        </article>
+</section>
+</div>
+        <div class="flex max-1210:flex-col max-1210:flex-col-reverse min-1210:flex-row min-1210:flex-nowrap md:ml-[50px] md:mr-[50px] lg:ml-[50px] lg:mr-[50px]">
+    <div class="basis-[100%] lg:basis-[60%]">
+        <div class="flex flex-row flex-wrap pl-2 pr-2">
+            <div class="flex basis-1/2 justify-center items-center overflow-hidden">
+               <div class="relative lg:w-[323px] lg:h-[270px] fade-in _animation-items">
+                <picture><source srcset="img/brackets.webp" type="image/webp"><img loading="lazy" class="w-full h-full object-cover lazyload" src="img/brackets.png" alt="smile"></picture>
+                <div class="absolute inset-0 flex items-center justify-center bg-[#68AB519E]/75 rounded-[24%] opacity-0 hover:opacity-100 hover:shadow-[0px_7px_10.5px_0px_rgba(0,0,0,0.25)] ease-in duration-300">
+                    <div class="block"><p class="font-['KaushanScript'] text-xl lg:text-3xl text-white">brackets</p></div>
+                    <div class="block"><img class="h-[15px] pl-2 lg:pl-3" src="img/arrow.svg" alt="arrow"></div>
+                </div>
+            </div> 
+            </div>
+            <div class="basis-1/2 flex justify-center items-center relative lg:pl-4 fade-in _animation-items">
+                <picture><source srcset="img/beadteeth.webp" type="image/webp"><img loading="lazy" class="w-full h-full object-cover lazyload" src="img/beadteeth.png" alt="tooth"></picture>
+            </div>
+            <div class="flex basis-1/2 justify-center items-center overflow-hidden fade-in _animation-items">
+                <div class="relative lg:w-[323px] lg:h-[270px]">
+                <picture><source srcset="img/teeth.webp" type="image/webp"><img loading="lazy" class="w-full h-full object-cover lazyload" src="img/teeth.png" alt="children-tooth"></picture>
+                <div class="absolute inset-0 flex items-center justify-center bg-[#68AB519E]/75 top-0 rounded-[24%] opacity-0 hover:opacity-100 hover:shadow-[0px_7px_10.5px_0px_rgba(0,0,0,0.25)] ease-in duration-300">
+                    <div class="block"><p class="font-['KaushanScript'] text-xl lg:text-3xl text-white">teeth cleaning for kids</p></div>
+                    <div class="block"><img class="h-[15px] pl-2 lg:pl-3" src="img/arrow.svg" alt="arrow"></div>
+                </div>
+            </div>
+            </div>
+            <div class="flex basis-1/2 justify-center items-center relative overflow-hidden lg:pl-4 fade-in _animation-items">
+                <div class="relative lg:w-[323px] lg:h-[270px]">
+                <picture><source srcset="img/implants.webp" type="image/webp"><img loading="lazy" class="w-full h-full object-cover lazyload" src="img/implants.png" alt="dental"></picture>
+                <div class="absolute inset-0 flex items-center justify-center bg-[#68AB519E]/75 top-0 rounded-[24%] opacity-0 hover:opacity-100 hover:shadow-[0px_7px_10.5px_0px_rgba(0,0,0,0.25)] ease-in duration-300">
+                    <div class="block"><p class="font-['KaushanScript'] text-xl lg:text-3xl text-white">dental filling</p></div>
+                    <div class="block"><img class="h-[15px] pl-2 lg:pl-3" src="img/arrow.svg" alt="arrow"></div>
+                </div>
+            </div>
+            </div>
+            <div class="flex justify-center items-center basis-1/2 fade-in _animation-items"><picture><source srcset="img/teeth2.webp" type="image/webp"><img loading="lazy" class="w-full h-full object-cover lazyload" src="img/teeth2.png" alt="teeth"></picture></div>
+            <div class="flex basis-1/2 justify-center items-center overflow-hidden lg:pl-4">
+            <div class="relative lg:w-[323px] lg:h-[270px] fade-in _animation-items">
+                <picture><source srcset="img/Jovem.webp" type="image/webp"><img loading="lazy" class="w-full h-full object-cover lazyload" src="img/Jovem.png" alt="teeth-cleaning"></picture>
+                <div class="absolute inset-0 flex items-center justify-center bg-[#68AB519E]/75 top-0 rounded-[24%] opacity-0 hover:opacity-100 hover:shadow-[0px_7px_10.5px_0px_rgba(0,0,0,0.25)] ease-in duration-300">
+                    <div class="block"><p class="font-['KaushanScript'] text-xl lg:text-3xl text-white">teeth clean for adult</p></div>
+                    <div class="block"><img class="h-[15px] pl-2 lg:pl-3" src="img/arrow.svg" alt="arrow"></div>
+                </div>
+            </div>
+            </div>
+    </div>
+    </div>
+    <div class="basis-auto flex flex-col flex-wrap items-center lg:basis-[40%] md:ml-[33px] lg:ml-[43px] fade-in _animation-items">
+        <div class="relative">
+            <picture><source srcset="img/Skin.webp" type="image/webp"><img loading="lazy" class="md:w-[268px] md:h-[441px] lg:w-[500px] lg:h-[700px] lazyload" src="img/Skin.png" alt="women"></picture>
+            <div class="absolute top-[10%] left-0 w-full text-center text-black py-2 font-['Itim'] text-[36px]">What we do</div>
+        </div>
+        <div class=""><h4 class="text-[#26740A] md:text-4xl lg:text-8xl">OUR SERVISES</h4></div>
+    </div>
+</div>
+        <footer class="mt-[65px] bg-[url('../img/footerbackground.png')] bg-no-repeat bg-cover bg-[length:auto_100%] bg-top sm:bg-[length:100vw_100%] lg:bg-center">
+    <div class="flex flex-col md:flex-row pt-[65px] lg:pt-[111px] lg:pb-[54px] pl-[20px] pr-[20px]  lg:pl-[70px] lg:pr-[70px] xl:pl-[117px] xl:pr-[117px] text-white border-b">
+        <div class="basis-1/2 pb-[25px] sm:pl-[15px] sm:pr-[15px] lg:pl-0 lg:pr-0">
+            <picture><source srcset="../img/logofooter.webp" type="image/webp"><img class="m-auto md:m-0 w-[100px] h-[67px] lg:w-[138px] lg:h-[97px]" src="../img/logofooter.png" alt="footer-logo"></picture>
+            <p class="text-center text-base md:text-justify lg:text-xl max-425:py-[30px] pt-[29px] lg:pt-[52px] lg:pr-[86px] font-['Jockey_One']">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                 when an unknown printer took</p>
+                 <div class="flex justify-center pt-[25px] lg:pr-[116px] lg:pt-[75px]">
+                    <div class="pr-[20px]"><img src="../img/map-solid.svg" alt="map"></div>
+                    <div>
+                        <p class="text-base lg:text-sm">Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry</p></div>
+                </div>     
+        </div>
+        <div class="flex justify-center md:justify-between lg:justify-around basis-1/2 max-425:flex-col py-[25px]">
+        <div class="text-center sm:pr-[65px]">
+            <h6 class="text-xl lg:text-3xl">QUICK LINKS</h6>
+            <nav class="pt-[5px]">
+                <ul class="flex flex-col text-base font-['Inter'] ">
+                    <li class="font-bold"><a class="text-base lg:leading-loose lg:text-xl" href="">Home</a></li>
+                    <li class=""><a class="text-base lg:text-xl lg:leading-loose" href="">About us</a></li>
+                    <li class=""><a class="text-base lg:text-xl lg:leading-loose " href="">Doctors</a></li>
+                    <li class=""><a class="text-base lg:text-xl lg:leading-loose" href="">Service</a></li>
+                    <li class=""><a class="text-base lg:text-xl lg:leading-loose" href="">Make an appointment</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+    
+        <div class="text-center max-425:py-[30px] md:py-0">
+            <h6 class="text-xl lg:text-3xl pb-[5px]">When we work</h6>
+            <p class="text-base lg:text-xl">Monday 9.00-18.00</p>
+            <p class="text-base lg:text-xl" >Tuesday 9.00-18.00</p>
+            <p class="text-base lg:text-xl">Wednesday 9.00-20.00</p>
+            <p class="text-base lg:text-xl">Thursday 9.00-18.00 </p>
+            <p class="text-base lg:text-xl" >Friday 10.00-18.00</p>
+            <p class="text-base lg:text-xl">Saturday 10.00-16.00</p>
+            <p class="text-base lg:text-xl">Sunday 11.00-15.00</p>
+        </div>
+    </div>
+
+    </div>
+<div class="flex flex-wrap justify-between md:ml-[15px] md:mr-[15px] lg:ml-[77px] lg:mr-[77px] xl:ml-[117px] xl:mr-[117px] pb-[33px] pt-[13px] gap-x-[5px]">
+      <div class="flex justify-center w-full md:w-auto pt-[20px]">
+       <div class="self-center"><picture><source srcset="../img/s-icon.webp" type="image/webp"><img class="w-[45px] h-[30px] pr-[18px]" src="../img/s-icon.png" alt="copyright"></picture></div> 
+        <div class="self-center"><span class="border-l-4 border-x-black pl-[18px] font-['Inter'] text-xs lg:text-lg">2024</span></div>
+    </div> 
+    <div class="flex justify-center w-full md:w-auto pt-[20px]">
+        <div class="self-center"><i class="fa-solid fa-mobile-screen-button text-[25px] lg:text-[42px]"></i></div>
+        <div class="self-center pl-1 lg:pl-4"><span class="font-['Inter'] text-lg">+1917391824912</span></div>
+    </div>
+    
+    <div class="flex justify-center w-full md:w-auto pt-[20px]">
+        <div class="self-center"><i class="fa-regular fa-envelope text-[25px] lg:text-[42px] "></i></div>
+       <div class="self-center pl-1 lg:pl-4"><span class="font-['Inter'] text-lg">efjoiejgfspd@gmail.com</span></div> 
+    </div>
+    <div class="flex justify-center w-full md:w-auto pt-[20px]">
+        <a class=""><i class="fab fa-instagram text-[30px] lg:text-[42px] p-2.5"></i></a>
+        <a><i class="fab fa-facebook text-[30px] lg:text-[42px] p-2.5"></i></a>
+        <a><i class="fa-brands fa-twitter text-[30px] lg:text-[42px] p-2.5"></i></a>
+    </div>
+</div> 
+</footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20241121213533"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.esm.js?_v=20241121213533"></script>
+
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js?_v=20241121213533"></script>
+        <script src="js/app.min.js?_v=20241121213533" async></script>
+
+    </body>
+</html>
